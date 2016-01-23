@@ -1,4 +1,4 @@
-# AutoInstalador ZoneWoW
+# AutoInstalador-WoW
 
 ## Project Information
 This project is scheduled shell, which makes the installation of all tools needed to wow your server 
