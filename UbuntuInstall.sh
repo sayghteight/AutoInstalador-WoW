@@ -101,7 +101,7 @@ do
 			sudo apt-get install libzmq-dev
 			sudo wget http://download.dre.vanderbilt.edu/previous_versions/ACE-6.0.0.tar.gz
 			sudo tar xvzf ACE-6.0.0.tar.gz
-			sudo cd ACE_wrappers/
+			cd ACE_wrappers/
 			sudo mkdir build
 			cd build
 			sudo ../configure --disable-ssl
