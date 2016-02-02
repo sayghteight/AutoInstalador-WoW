@@ -46,13 +46,15 @@ _menu()
 
     echo "3) Instalación de un entorno de desarrollo (Herramientas) [Con Ace]"
 	
-    echo "4) Instalación de un entorno de core [4.3.4]"
+    echo "4) Instalación de un entorno de core [4.3.4 (V9)]"
 
     echo "5) Instalación de un entorno de core [6.x]"
+	
+    echo "6) Instalación de un entorno de core [4.3.4 (TC)]"
 
     echo
 
-    echo "6) Salir"
+    echo "7) Salir"
 
     echo
 
@@ -148,7 +150,27 @@ do
 			;;
 			
 		
-         6)
+		 6)
+		
+		 cd home/
+			sudo mkdir TC_434s
+			sudo mkdir TCCore_434srv
+			sudo git clone https://gitlab.com/trinitycore/TrinityCore_434.git TC_434s
+			cd TC_434s/
+			sudo mkdir build
+			cd build
+			echo "Se esta procediendo a ejecutar el cmake por defecto"
+			sudo cmake ../ -DCMAKE_INSTALL_PREFIX=/home/TCCore_434srv -DWITH_WARNINGS=0 -DTOOLS=0
+			echo "Si el CMAKE se ejecuto sin problemas, no cancele la instalación. Si no cancele con Ctrl+C"
+			sleep 2
+			echo "Ejecutando Make a 3 cores"
+			sudo make -j3
+			echo "Make realizado ... instalando"
+			sudo make install 
+			_menu
+			;;
+		
+         7)
 
 
 			exit
