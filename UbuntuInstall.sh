@@ -21,6 +21,15 @@
                 echo .
                 echo .
 
+				
+clear; echo “CARGANDO, ESPERE POR FAVOR”;
+echo “”;for (( j=1; j<=3;j++ )); do 
+echo -e “Cargando elementos de controlador $j \c” ;for (( i=0; i<=30; i++ ));do 
+echo -e “\033[0;34m.\c”;sleep 0.05;done;
+echo -e “\c”;
+echo -e “\t\033[0;32m[OK]\033[0m";done; echo "\033[0;32mCARGADO CON EXITO\033[0m"
+				
+				
 # Muestra el menu general
 
 _menu()
@@ -67,12 +76,14 @@ do
     case $opc in
 
         1)
+		
 			sudo apt-get -y update
             sudo apt-get -y install apache2
 			sudo apt-get -y install mysql-server libapache2-mod-auth-mysql php5-mysql
 			sudo apt-get -y install php5 libapache2-mod-php5 php5-mcrypt php5-common php5-cgi php5-curl
 			sudo mysql_install_db
 			sudo mysql_secure_installation
+			_menu
 			;;
 
         2)
@@ -80,6 +91,7 @@ do
 			sudo apt-get -y update
 			sudo apt-get install -y build-essential autoconf libtool gcc g++ make cmake git-core wget p7zip-full libncurses5-dev zlib1g-dev libbz2-dev openssl libssl-dev mysql-server mysql-client libmysqlclient-dev libmysql++-dev libreadline6-dev libboost-dev libboost-thread-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-iostreams-dev libzmq-dev
 			sudo apt-get install libzmq-dev
+			_menu
             ;;
 
         3)
@@ -95,6 +107,7 @@ do
 			sudo ../configure --disable-ssl
 			sudo make
 			sudo make install
+			_menu
 			;;
 
         4)
@@ -113,6 +126,7 @@ do
 			sudo make -j3
 			echo "Make realizado ... instalando"
 			sudo make install 
+			_menu
 			;;
         5)
             cd home/
@@ -130,6 +144,7 @@ do
 			sudo make -j3
 			echo "Make realizado ... instalando"
 			sudo make install 
+			_menu
 			;;
 			
 		
