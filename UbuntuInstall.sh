@@ -103,7 +103,7 @@ do
 			sudo tar xvzf ACE-6.0.0.tar.gz
 			sudo cd ACE_wrappers/
 			sudo mkdir build
-			sudo cd build
+			cd build
 			sudo ../configure --disable-ssl
 			sudo make
 			sudo make install
