@@ -21,19 +21,9 @@
                 echo .
                 echo .
 
-				
-clear; echo “CARGANDO, ESPERE POR FAVOR”;
-echo “”;for (( j=1; j<=3;j++ )); do 
-echo -e “Cargando elementos de controlador $j \c” ;for (( i=0; i<=30; i++ ));do 
-echo -e “\033[0;34m.\c”;sleep 0.05;done;
-echo -e “\c”;
-echo -e “\t\033[0;32m[OK]\033[0m";done; echo "\033[0;32mCARGADO CON EXITO\033[0m"
-				
-				
-# Muestra el menu general
 
-_menu()
 
+function menu()
 {
 
     echo "Selecciona una opcion:"
@@ -61,7 +51,6 @@ _menu()
     echo -n "Indica una opcion: "
 
 }
-
 
 # opcion por defecto
 
