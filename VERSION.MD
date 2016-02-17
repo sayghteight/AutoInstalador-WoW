@@ -7,6 +7,9 @@
 + Release date : Jan 23, 2016 
 + Last Update : Feb 17, 2016 
 
+### Compare
+
++ [Compare master - 0.3](https://github.com/sayghteight/AutoInstalador-WoW/compare/0.3?expand=1)
 
 ### Last Commits 
 
