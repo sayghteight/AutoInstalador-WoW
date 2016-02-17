@@ -44,7 +44,7 @@ else
   echo "No, tienes permisos para leer/escribir."
   
    cd sh/ES_es/
-   sudo chmod 777 WoWTool_ubuntu.sh
+   sudo chmod 777 WoWTool_Ubuntu.sh
    sudo ./WoWTool_Ubuntu.sh
 fi
 
