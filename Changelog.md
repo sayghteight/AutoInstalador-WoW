@@ -8,6 +8,23 @@ Todos los cambios notables seran notificados aquí.
 - Bases de datos instalador
 - Re-Organizar la estructura
 
+
+## [0.2.1] - 2016-02-17
+### Added
+- [AutoInstaller] Actualizado el instalador con varias funciones.
+- [AutoInstaller] Agregadas las funciones para el menu
+
+### Mod
+
+- [Repositorios] Se han agregado varíos repositorios
+
+### Fixes
+
+- [#1] El bug #1 del issues queda totalmente arreglado.
+- [#2] El bug #2 del issues queda arreglado.
+- [#3] El bug no registrado del menu, ya ha sido arreglado fue debido a la pronta subida de esta versión.
+
+
 ## [0.2] - 2016-01-23
 ### Added
 - [AutoInstaller] Actualizado el instalador con varias funciones.

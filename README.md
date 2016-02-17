@@ -12,9 +12,17 @@ It includes many emulators but we may need to update every x time to add more co
 ## Supported System Operative
 **Ubuntu**
 
+
+## Un-supported System Operative
+
+**CentOS**
+**Debian**
+**Windows** 
+
+
 ## Requirements
 + Platform: Linux
-+ Software : sudo, nano
++ Software : sudo, git, nano
 
 ## Install
 Detailed installation guides are available in the wiki for
@@ -30,5 +38,7 @@ Please use the search function before you report issues.
 License:  GNU 
 
 
-## Change Log
+## Other Links
 Read File [Change Log](Changelog.md)
+Read File [TODO] (TODO.md)
+Read File [Version] (VERSION.MD)
