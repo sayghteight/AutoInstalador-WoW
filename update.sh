@@ -29,6 +29,7 @@ echo "Se esta actualizando el repositorio con los nuevos updates."
 sudo rm -r -f install.sh
 sudo git pull
 sudo chmod 777 install.sh
+sudo ./install.sh
 
 }
 
