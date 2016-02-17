@@ -1,10 +1,14 @@
 # AutoInstaller WoW Tool
 
-# -------------------------------------------------------------------------
-# |Project:                               |     AutoInstaller WoW Tool    |
-# -------------------------------------------------------------------------
-# |Build version:                                |    0.2.1               |
-# |Repositories Version:                         |    0.0.1b              |
-# |Release Date:                                 | Jan 23, 2016           |
-# |Latest Update:                                | Feb 16, 2016           |
-# -------------------------------------------------------------------------
+### Informatión project
+
++ Code name : AutoInstaller WoW Tool
++ Version : 0.2.1
++ Release date : Jan 23, 2016 
++ Last Update : Feb 17, 2016 
+
+
+### Last Commits 
+
++ [0.2.1 commit #1](https://github.com/sayghteight/AutoInstalador-WoW/commit/d78dcfebe2ad77a031ca990836bdb1d8c8d5b313)
+
