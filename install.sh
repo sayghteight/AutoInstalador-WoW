@@ -35,15 +35,15 @@ echo "Se esta trabajando en el lenguaje ingles, por lo cúal esta deshabilitada.
 function require_ubuntu_es()
 {
 
-	if [ -w sh/EN_en/WoWTool_ubuntu.sh ]
+	if [ -w sh/ES_es/WoWTool_ubuntu.sh ]
 then
   echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./sh/EN_en/WoWTool_Ubuntu.sh
+   sudo ./sh/ES_es/WoWTool_Ubuntu.sh
 else
   echo "No, tienes permisos para leer/escribir."
   
-  sudo chmod 777 /sh/EN_en/WoWTool_ubuntu.sh
-   sudo ./sh/EN_en/WoWTool_Ubuntu.sh
+  sudo chmod 777 /sh/ES_es/WoWTool_ubuntu.sh
+   sudo ./sh/ES_es/WoWTool_Ubuntu.sh
 fi
 
 }
