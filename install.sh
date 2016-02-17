@@ -108,7 +108,8 @@ do
         1)
 			echo "Español : Se esta actualizando el repositorio a la última version disponible";
 			echo "English : It is updating the repository to the latest version available";
-			sudo git pull
+			sudo chmod 777 update.sh
+			sudo ./update.sh
 			;;
 
         2)
