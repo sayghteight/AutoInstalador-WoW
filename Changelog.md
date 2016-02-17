@@ -4,12 +4,31 @@ Todos los cambios notables seran notificados aquí.
 
 ## [Unreleased]
 ### Added
-- Agregar el lenguaje (en-EN)
 - Bases de datos instalador
-- Re-Organizar la estructura
 
+## [0.3a] - 2016-02-17
+## Added
 
-## [0.2.1] - 2016-02-17
+- [Install] Se instalara todo de forma individual.
+- [Install] Se ha separado los instaladores en funciones, para mayor comunidad a la hora de arreglar errores de ellos.
+
+## Repositorios
+
+- [Update TC434] Ahora usaremos el repositorio de TC434 de gitlab.
+- [Update V9] Se ha deshabilitado el soporte para este repositorio, hasta arreglar los errores de compilación.
+- [Update 6X] Ahora se usara el repositorio 6x de github de Trinity Core (Recordamos que es inestable.)
+
+## Estructura
+
+- [sh] La carpeta sh contara con los binarios
+- [sh/repository] Cuenta con los repositorios y su instalación, se puede modificar y agregar más el codigo es sencillo.
+
+## Lenguaje
+
+- [Spanish] El lenguaje español esta al 100%
+- [English] El lenguaje ingles aún se encuentra en proceso 5%
+
+## [0.2.1] - 2016-02-16
 ### Added
 - [AutoInstaller] Actualizado el instalador con varias funciones.
 - [AutoInstaller] Agregadas las funciones para el menu
