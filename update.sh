@@ -26,6 +26,7 @@ function update_sh(){
 
 
 echo "Se esta actualizando el repositorio con los nuevos updates."
+git reset --hard
 sudo git pull
 sudo chmod 777 install.sh
 sudo ./install.sh
