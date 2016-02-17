@@ -38,12 +38,14 @@ function require_ubuntu_es()
 	if [ -w sh/ES_es/WoWTool_ubuntu.sh ]
 then
   echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./sh/ES_es/WoWTool_Ubuntu.sh
+   cd sh/ES_es/
+   sudo ./WoWTool_Ubuntu.sh
 else
   echo "No, tienes permisos para leer/escribir."
   
   sudo chmod 777 /sh/ES_es/WoWTool_ubuntu.sh
-   sudo ./sh/ES_es/WoWTool_Ubuntu.sh
+   cd sh/ES_es/
+   sudo ./WoWTool_Ubuntu.sh
 fi
 
 }
