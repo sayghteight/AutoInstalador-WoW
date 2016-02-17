@@ -51,6 +51,52 @@ function menu()
 }
 
 
+
+function repository_cataclysm_v9(){
+
+
+echo "Español : Este repositorio esta temporalmente desactivado."
+
+}
+
+
+function repository_cataclysm_tc()
+{
+
+echo "Español : Se esta procediendo a ejecutar los comandos para instalar su emulador."
+if [ -w repository/cata_434_tc.sh ]
+then
+  echo "Si, Tu tienes permisos de lectura y escritura"
+   sudo ./repository/cata_434_tc.sh
+else
+  echo "No, tienes permisos para leer/escribir."
+  
+  sudo chmod 777 /repository/cata_434_tc.sh
+   sudo ./repository/cata_434_tc.sh
+fi
+
+
+}
+
+
+function repository_6x()
+{
+
+echo "Español : Se esta procediendo a ejecutar los comandos para instalar su emulador."
+
+if [ -w repository/wod_6x.sh ]
+then
+  echo "Si, Tu tienes permisos de lectura y escritura"
+   sudo ./repository/wod_6x.sh
+else
+  echo "No, tienes permisos para leer/escribir."
+  
+  sudo chmod 777 /repository/wod_6x.sh
+   sudo ./repository/wod_6x.sh
+fi
+
+}
+
 # opcion por defecto
 
 opc="0"
@@ -131,49 +177,3 @@ do
     read opc
 
 done
-
-
-function repository_cataclysm_v9(){
-
-
-echo "Español : Este repositorio esta temporalmente desactivado."
-
-}
-
-
-function repository_cataclysm_tc()
-{
-
-echo "Español : Se esta procediendo a ejecutar los comandos para instalar su emulador."
-if [ -w repository/cata_434_tc.sh ]
-then
-  echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./repository/cata_434_tc.sh
-else
-  echo "No, tienes permisos para leer/escribir."
-  
-  sudo chmod 777 /repository/cata_434_tc.sh
-   sudo ./repository/cata_434_tc.sh
-fi
-
-
-}
-
-
-function repository_6x()
-{
-
-echo "Español : Se esta procediendo a ejecutar los comandos para instalar su emulador."
-
-if [ -w repository/wod_6x.sh ]
-then
-  echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./repository/wod_6x.sh
-else
-  echo "No, tienes permisos para leer/escribir."
-  
-  sudo chmod 777 /repository/wod_6x.sh
-   sudo ./repository/wod_6x.sh
-fi
-
-}
