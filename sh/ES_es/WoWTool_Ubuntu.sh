@@ -67,12 +67,14 @@ echo "Español : Se esta procediendo a ejecutar los comandos para instalar su em
 if [ -w repository/cata_434_tc.sh ]
 then
   echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./repository/cata_434_tc.sh
+   cd repository
+   sudo ./cata_434_tc.sh
 else
   echo "No, tienes permisos para leer/escribir."
   
   sudo chmod 777 /repository/cata_434_tc.sh
-   sudo ./repository/cata_434_tc.sh
+  cd repository
+   sudo ./cata_434_tc.sh
 fi
 
 
@@ -87,12 +89,14 @@ echo "Español : Se esta procediendo a ejecutar los comandos para instalar su em
 if [ -w repository/wod_6x.sh ]
 then
   echo "Si, Tu tienes permisos de lectura y escritura"
-   sudo ./repository/wod_6x.sh
+    cd repository
+   sudo ./wod_6x.sh
 else
   echo "No, tienes permisos para leer/escribir."
   
-  sudo chmod 777 /repository/wod_6x.sh
-   sudo ./repository/wod_6x.sh
+  sudo chmod 777 /repository/wod_6x.sh  
+  cd repository
+   sudo ./wod_6x.sh
 fi
 
 }
