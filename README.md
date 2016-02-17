@@ -15,9 +15,9 @@ It includes many emulators but we may need to update every x time to add more co
 
 ## Un-supported System Operative
 
-**CentOS**
-**Debian**
-**Windows** 
++ **CentOS**
++ **Debian**
++ **Windows** 
 
 
 ## Requirements
